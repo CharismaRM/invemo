@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230516220426">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230523195747">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,11 +67,46 @@
 								</div>
 							</div>
 						</div>
-						<div data-da=".main__content, 768,1" class="main__image">
+						<div data-da=".main__content, 767,1" class="main__image">
 							<picture><source srcset="img/main/main.webp" type="image/webp"><img src="img/main/main.png" alt="main"></picture>
 						</div>
 
 					</div>
+				</div>
+			</section>
+			<section class="page__security security">
+				<div class="security__container">
+					<h2 class="security__title title">Enhance security <br> and efficiency of your business</h2>
+					<div class="security__image security__image_pc"><picture><source srcset="img/security/pc.webp" type="image/webp"><img src="img/security/pc.png" alt="pc"></picture></div>
+					<div class="security__image security__image_mobile mobile"><picture><source srcset="img/security/mobile.webp" type="image/webp"><img src="img/security/mobile.png" alt=""></picture>
+					</div>
+					<ul class="security__list mobile">
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Fully control, monitor, and customize flow of funds</div>
+						</li>
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Do business with a risk-averse counterparty</div>
+						</li>
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Streamline operational and transactional flow</div>
+						</li>
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Reduce counterparty risk & fraud</div>
+						</li>
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Ensure each side fulfills its obligations</div>
+						</li>
+						<li class="security__item">
+							<div class="security__icon"><img src="img/security/ok.svg" alt=""></div>
+							<div class="security__text">Save intermediary fees and improve business efficiency</div>
+						</li>
+
+					</ul>
 				</div>
 			</section>
 			<section class="page__technology technology">
@@ -182,8 +217,20 @@
 							</h2>
 							<div class="businesses__description text">Secure and control digital assets payment flow</div>
 							<div class="businesses__items">
-								<div class="businesses__item">
+								<div class="businesses__item businesses__item_first">
 									<div class="businesses__subtitle">B2B</div>
+									<div class="businesses__text text">Custodians <br>
+										Crypto exchanges, liquidity providers, OTC desks
+										Asset managers, hedge funds, pension funds</div>
+								</div>
+								<div class="businesses__item businesses__item_second">
+									<div class="businesses__subtitle">B2B2</div>
+									<div class="businesses__text text">Custodians <br>
+										Crypto exchanges, liquidity providers, OTC desks
+										Asset managers, hedge funds, pension funds</div>
+								</div>
+								<div class="businesses__item businesses__item_third">
+									<div class="businesses__subtitle">B2B34</div>
 									<div class="businesses__text text">Custodians <br>
 										Crypto exchanges, liquidity providers, OTC desks
 										Asset managers, hedge funds, pension funds</div>
@@ -192,8 +239,10 @@
 						</div>
 					</div>
 				</div>
-				<div data-da=".businesses__body, 767,2" class="businesses__image">
-					<picture><source srcset="img/businesses/image1.webp" type="image/webp"><img src="img/businesses/image1.png" alt="photo1"></picture>
+				<div data-da=".businesses__body, 767,2" class="businesses__images">
+					<picture><source srcset="img/businesses/image1.webp" type="image/webp"><img class="businesses__image businesses__image_first" src="img/businesses/image1.png" alt="photo1"></picture>
+					<picture><source srcset="img/businesses/image2.webp" type="image/webp"><img class="businesses__image businesses__image_second" src="img/businesses/image2.png" alt="photo2"></picture>
+					<picture><source srcset="img/businesses/image3.webp" type="image/webp"><img class="businesses__image businesses__image_third" src="img/businesses/image3.png" alt="photo3"></picture>
 				</div>
 				<div class="businesses__mobile">
 					<div class="businesses__container">
@@ -248,7 +297,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="cases__btn btn">Let's talk about your case</a>
+					<a href="#" data-goto=".feedback__container" class="cases__btn btn">Let's talk about your case</a>
 				</div>
 			</section>
 			<section class="page__solutions solutions">
@@ -311,7 +360,7 @@
 								</div>
 								<div class="solutions__description">
 									<div class="solutions__bold">Pricing</div>
-									<a class="solutions__btn btn">
+									<a href="#" data-goto=".feedback__container" class="solutions__btn btn">
 										<span>Free</span> Start to Use
 									</a>
 								</div>
@@ -378,7 +427,7 @@
 
 								<div class="solutions__description">
 									<div class="solutions__bold">Pricing</div>
-									<a class="solutions__btn btn">
+									<a href="#" data-goto=".feedback__container" class="solutions__btn btn">
 										Request quote
 									</a>
 								</div>
@@ -395,43 +444,41 @@
 					<h2 class="faq__title title">Frequent questions and answers</h2>
 					<div class="faq__body">
 						<div class="faq__image"><picture><source srcset="img/faq/road.webp" type="image/webp"><img src="img/faq/road.png" alt="road"></picture></div>
-						<div data-spollers data-one-spoller class="faq__spollers spollers">
+						<div data-spollers class="faq__spollers spollers">
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How does the solution mitigate
 									counterparty risk? <img src="img/faq/plus.svg" alt=""></button>
-								<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit,
-									officia laboriosam quas obcaecati dolores nemo dolorem quo nisi hic iusto.</div>
+								<div class="spollers__body text">Each counterparty can ensure fulfillment of each other’s
+									obligations because each counterparty has to deposit an agreed asset to a mutually controlled
+									wallet.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How do I know that each counterparty
 									has fulfilled its obligations?
 									<img src="img/faq/plus.svg" alt=""></button>
-								<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit,
-									officia laboriosam quas obcaecati dolores nemo dolorem quo nisi hic iusto.</div>
+								<div class="spollers__body text">You can monitor the account balance in your user account, 3rd
+									party block explorer platform (e.g. Etherscan), and receive email notifications.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">Shall I choose a centralized or a
 									decentralized solution?
 									<img src="img/faq/plus.svg" alt=""></button>
-								<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit,
-									officia laboriosam quas obcaecati dolores nemo dolorem quo nisi hic iusto.</div>
+								<div class="spollers__body text">That entirely depends on your or your business’s understanding
+									of digital assets. If you are new to digital assets, then a centralized solution is
+									preferable because our team can handle the complete cycle. If you are used to transacting in
+									digital assets regularly, then a decentralized solution could be a better option.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How safe is a centralized solution?
 									<img src="img/faq/plus.svg" alt=""></button>
-								<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit,
-									officia laboriosam quas obcaecati dolores nemo dolorem quo nisi hic iusto.</div>
+								<div class="spollers__body text">Deposited assets are held at top-tier banks and institutional
+									custodians ensuring the highest levels of compliance and security are matched.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How safe is a decentralized solution?
 									<img src="img/faq/plus.svg" alt=""></button>
-								<div class="spollers__body text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit,
-									officia laboriosam quas obcaecati dolores nemo dolorem quo nisi hic iusto.</div>
+								<div class="spollers__body text">Robust and battle-tested smart contracts ensure the highest
+									grade security of the complete transaction cycle.</div>
 							</div>
 
 						</div>
@@ -447,62 +494,59 @@
 							<form data-one-select action="" class="feedback__form form-feedback">
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables ">
-										<div class="form-feedback__lable text">Email</div>
+										<label for="formEmail" class="form-feedback__lable text">Email</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="sample@company.com" class="input">
+										<input id="formEmail" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="sample@company.com" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables">
-										<div class="form-feedback__lable  text">Name</div>
+										<label for="formName" class="form-feedback__lable  text">Name</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="John Smith" class="input">
+										<input id="formName" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="John Smith" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables">
-										<div class="form-feedback__lable text">Client type</div>
+										<label for="formType" class="form-feedback__lable text">Client type</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select aria-placeholder="12312" data-show name="form[]" class="form">
-											<option data-class="text" value="1" selected>Пункт №1</option>
-											<option data-class="text" value="2">Пункт №2</option>
-											<option data-class="text" value="3">Пункт №3</option>
-											<option data-class="text" value="4">Пункт №4</option>
+										<select id="formType" aria-placeholder="12312" data-show name="form[]" class="form">
+											<option data-class="text" value="1" selected>Business</option>
+											<option data-class="text" value="2">Individual Service</option>
+
 										</select>
 										<select name="form[]" class="form">
-											<option data-class="text" value="1" selected>Пункт №1</option>
-											<option data-class="text" value="2">Пункт №2</option>
-											<option data-class="text" value="3">Пункт №3</option>
-											<option data-class="text" value="4">Пункт №4</option>
+											<option data-class="text" value="1" selected>Decentralized</option>
+											<option data-class="text" value="2">Centralized</option>
 										</select>
 									</div>
 								</div>
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables">
-										<div class="form-feedback__lable text">Transaction volume</div>
+										<label for="formVolume" class="form-feedback__lable text">Transaction volume</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select name="form[]" class="form">
-											<option data-class="text" value="1" selected>Пункт №1</option>
-											<option data-class="text" value="2">Пункт №2</option>
-											<option data-class="text" value="3">Пункт №3</option>
-											<option data-class="text" value="4">Пункт №4</option>
+										<select id="formVolume" name="form[]" class="form">
+											<option data-class="text" value="1" selected>0-10.000</option>
+											<option data-class="text" value="2">10.000-100.000</option>
+											<option data-class="text" value="3">100.000-1.000.000</option>
+											<option data-class="text" value="4">1.000.000</option>
 										</select>
 									</div>
 								</div>
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables">
-										<div class="form-feedback__lable text">Currency</div>
+										<label for="formCurrency" class="form-feedback__lable text">Currency</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select name="form[]" class="form">
-											<option data-class="text" value="1" selected>Пункт №1</option>
-											<option data-class="text" value="2">Пункт №2</option>
-											<option data-class="text" value="3">Пункт №3</option>
-											<option data-class="text" value="4">Пункт №4</option>
+										<select id="formCurrency" name="form[]" class="form">
+											<option data-class="text" value="1" selected>BTC</option>
+											<option data-class="text" value="2">ETH</option>
+											<option data-class="text" value="3">USDT</option>
+											<option data-class="text" value="4">Other</option>
 										</select>
 									</div>
 								</div>
@@ -521,6 +565,7 @@
 
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -565,7 +610,14 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230516220426"></script>
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20230523195747"></script>
+	<!-- ScrollTrigger -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20230523195747"></script>
+	<!-- jQ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230523195747"></script>
+
+	<script src="js/app.min.js?_v=20230523195747"></script>
 </body>
 
 </html>
