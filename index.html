@@ -6,7 +6,18 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523195747">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5HMYB9JQE&_v=20230525171356"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-J5HMYB9JQE');
+	</script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525171356">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +27,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
@@ -69,6 +80,8 @@
 						</div>
 						<div data-da=".main__content, 767,1" class="main__image">
 							<picture><source srcset="img/main/main.webp" type="image/webp"><img src="img/main/main.png" alt="main"></picture>
+							<!-- <img src="img/main/image.svg" alt="main"> -->
+
 						</div>
 
 					</div>
@@ -447,7 +460,7 @@
 						<div data-spollers class="faq__spollers spollers">
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How does the solution mitigate
-									counterparty risk? <img src="img/faq/plus.svg" alt=""></button>
+									counterparty risk? <span class="faq__icon"></span></button>
 								<div class="spollers__body text">Each counterparty can ensure fulfillment of each other’s
 									obligations because each counterparty has to deposit an agreed asset to a mutually controlled
 									wallet.</div>
@@ -455,14 +468,14 @@
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How do I know that each counterparty
 									has fulfilled its obligations?
-									<img src="img/faq/plus.svg" alt=""></button>
+									<span class="faq__icon"></span></button>
 								<div class="spollers__body text">You can monitor the account balance in your user account, 3rd
 									party block explorer platform (e.g. Etherscan), and receive email notifications.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">Shall I choose a centralized or a
 									decentralized solution?
-									<img src="img/faq/plus.svg" alt=""></button>
+									<span class="faq__icon"></span></button>
 								<div class="spollers__body text">That entirely depends on your or your business’s understanding
 									of digital assets. If you are new to digital assets, then a centralized solution is
 									preferable because our team can handle the complete cycle. If you are used to transacting in
@@ -470,13 +483,13 @@
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How safe is a centralized solution?
-									<img src="img/faq/plus.svg" alt=""></button>
+									<span class="faq__icon"></span></button>
 								<div class="spollers__body text">Deposited assets are held at top-tier banks and institutional
 									custodians ensuring the highest levels of compliance and security are matched.</div>
 							</div>
 							<div class="spollers__item">
 								<button type="button" data-spoller class="spollers__title">How safe is a decentralized solution?
-									<img src="img/faq/plus.svg" alt=""></button>
+									<span class="faq__icon"></span></button>
 								<div class="spollers__body text">Robust and battle-tested smart contracts ensure the highest
 									grade security of the complete transaction cycle.</div>
 							</div>
@@ -491,13 +504,15 @@
 					<div class="feedback__items">
 						<div class="feedback__item">
 							<div class="feedback__subtitle">Please, indicate the following</div>
-							<form data-one-select action="" class="feedback__form form-feedback">
+
+
+							<form id="order_our1" data-one-select action="" class="feedback__form form-feedback">
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables ">
-										<label for="formEmail" class="form-feedback__lable text">Email</label>
+										<label for="formEmail" class="form-feedback__lable text">Email <span>*</span></label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input id="formEmail" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="sample@company.com" class="input">
+										<input id="formEmail" autocomplete="off" type="text" name="email" data-error="Ошибка" placeholder="sample@company.com" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
@@ -505,7 +520,7 @@
 										<label for="formName" class="form-feedback__lable  text">Name</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input id="formName" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="John Smith" class="input">
+										<input id="formName" autocomplete="off" type="text" name="name" data-error="Ошибка" placeholder="John Smith" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
@@ -513,12 +528,11 @@
 										<label for="formType" class="form-feedback__lable text">Client type</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select id="formType" aria-placeholder="12312" data-show name="form[]" class="form">
+										<select id="formType" aria-placeholder="12312" data-show name="client" class="form">
 											<option data-class="text" value="1" selected>Business</option>
 											<option data-class="text" value="2">Individual Service</option>
-
 										</select>
-										<select name="form[]" class="form">
+										<select name="business" class="form">
 											<option data-class="text" value="1" selected>Decentralized</option>
 											<option data-class="text" value="2">Centralized</option>
 										</select>
@@ -529,7 +543,7 @@
 										<label for="formVolume" class="form-feedback__lable text">Transaction volume</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select id="formVolume" name="form[]" class="form">
+										<select id="formVolume" name="volume" class="form">
 											<option data-class="text" value="1" selected>0-10.000</option>
 											<option data-class="text" value="2">10.000-100.000</option>
 											<option data-class="text" value="3">100.000-1.000.000</option>
@@ -539,10 +553,10 @@
 								</div>
 								<div class="form-feedback__row">
 									<div class="form-feedback__column form-feedback__column_lables">
-										<label for="formCurrency" class="form-feedback__lable text">Currency</label>
+										<label class="form-feedback__lable text">Currency</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select id="formCurrency" name="form[]" class="form">
+										<select name="currency" class="form">
 											<option data-class="text" value="1" selected>BTC</option>
 											<option data-class="text" value="2">ETH</option>
 											<option data-class="text" value="3">USDT</option>
@@ -550,8 +564,22 @@
 										</select>
 									</div>
 								</div>
+								<button type="submit" class="button feedback__btn btn">Send</button>
+
 							</form>
-							<button type="submit" class="button feedback__btn btn">Send</button>
+							<form id="order_our2" action="" style="display: none;">
+								<input type="hidden" name="project_name" value="Invemo">
+								<input type="hidden" name="admin_email" value="info@invemo.ch">
+								<input type="hidden" name="form_subject" value="Сообщение Invemo">
+
+								<input type="hidden" name="email2" value="">
+								<input type="hidden" name="name2" value="">
+								<input type="hidden" name="client2" value="">
+								<input type="hidden" name="business2" value="">
+								<input type="hidden" name="volume2" value="">
+								<input type="hidden" name="currency2" value="">
+
+							</form>
 							<div class="feedback__subtext">By clicking on the «Send» button, you agree
 								with Privacy Policy
 								and data processing policy</div>
@@ -570,9 +598,9 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__left">
-					<div class="footer__logo">
+					<a href="#" class="footer__logo">
 						<img src="img/logo.svg" alt="logo">
-					</div>
+					</a>
 					<div class="footer__text">
 						<p>Invemo Capital AG <br>
 							Blegistrasse 13 <br>
@@ -584,7 +612,7 @@
 				</div>
 				<div class="footer__right">
 					<div class="footer__sociales">
-						<a href="" class="footer__mail footer__link">info@invemo.ch</a>
+						<a href="#" class="footer__mail footer__link">info@invemo.ch</a>
 						<div class="footer__icons">
 							<a href="#" class="footer__in"><picture><source srcset="img/header/in.webp" type="image/webp"><img src="img/header/in.png" alt=""></picture></a>
 							<a href="#" class="footer__sociale"><picture><source srcset="img/header/sociale.webp" type="image/webp"><img src="img/header/sociale.png" alt=""></picture></a>
@@ -611,13 +639,13 @@
 	</div>
 </div> -->
 	<!-- gsap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20230523195747"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20230525171356"></script>
 	<!-- ScrollTrigger -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20230523195747"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20230525171356"></script>
 	<!-- jQ -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230523195747"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230525171356"></script>
 
-	<script src="js/app.min.js?_v=20230523195747"></script>
+	<script src="js/app.min.js?_v=20230525171356"></script>
 </body>
 
 </html>
