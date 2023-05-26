@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5HMYB9JQE&_v=20230525171356"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5HMYB9JQE&_v=20230526181648"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -17,7 +17,7 @@
 
 		gtag('config', 'G-J5HMYB9JQE');
 	</script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230525171356">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230526181648">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,8 +79,8 @@
 							</div>
 						</div>
 						<div data-da=".main__content, 767,1" class="main__image">
-							<picture><source srcset="img/main/main.webp" type="image/webp"><img src="img/main/main.png" alt="main"></picture>
-							<!-- <img src="img/main/image.svg" alt="main"> -->
+							<!-- <picture><source srcset="img/main/main.webp" type="image/webp"><img src="img/main/main.png" alt="main"></picture> -->
+							<img src="img/main/image.svg" alt="main">
 
 						</div>
 
@@ -90,8 +90,8 @@
 			<section class="page__security security">
 				<div class="security__container">
 					<h2 class="security__title title">Enhance security <br> and efficiency of your business</h2>
-					<div class="security__image security__image_pc"><picture><source srcset="img/security/pc.webp" type="image/webp"><img src="img/security/pc.png" alt="pc"></picture></div>
-					<div class="security__image security__image_mobile mobile"><picture><source srcset="img/security/mobile.webp" type="image/webp"><img src="img/security/mobile.png" alt=""></picture>
+					<div class="security__image security__image_pc"><img src="img/security/pc.svg" alt="pc"></div>
+					<div class="security__image security__image_mobile mobile"><img src="img/security/mobile.svg" alt="">
 					</div>
 					<ul class="security__list mobile">
 						<li class="security__item">
@@ -512,7 +512,7 @@
 										<label for="formEmail" class="form-feedback__lable text">Email <span>*</span></label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input id="formEmail" autocomplete="off" type="text" name="email" data-error="Ошибка" placeholder="sample@company.com" class="input">
+										<input id="formEmail" autocomplete="off" type="text" name="email1" data-error="Ошибка" placeholder="sample@company.com" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
@@ -520,7 +520,7 @@
 										<label for="formName" class="form-feedback__lable  text">Name</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<input id="formName" autocomplete="off" type="text" name="name" data-error="Ошибка" placeholder="John Smith" class="input">
+										<input id="formName" autocomplete="off" type="text" name="name1" data-error="Ошибка" placeholder="John Smith" class="input">
 									</div>
 								</div>
 								<div class="form-feedback__row">
@@ -528,11 +528,11 @@
 										<label for="formType" class="form-feedback__lable text">Client type</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select id="formType" aria-placeholder="12312" data-show name="client" class="form">
+										<select id="formType" aria-placeholder="12312" data-show name="client1" class="form">
 											<option data-class="text" value="1" selected>Business</option>
 											<option data-class="text" value="2">Individual Service</option>
 										</select>
-										<select name="business" class="form">
+										<select name="business1" class="form">
 											<option data-class="text" value="1" selected>Decentralized</option>
 											<option data-class="text" value="2">Centralized</option>
 										</select>
@@ -543,7 +543,7 @@
 										<label for="formVolume" class="form-feedback__lable text">Transaction volume</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select id="formVolume" name="volume" class="form">
+										<select id="formVolume" name="volume1" class="form">
 											<option data-class="text" value="1" selected>0-10.000</option>
 											<option data-class="text" value="2">10.000-100.000</option>
 											<option data-class="text" value="3">100.000-1.000.000</option>
@@ -556,7 +556,7 @@
 										<label class="form-feedback__lable text">Currency</label>
 									</div>
 									<div class="form-feedback__column form-feedback__column_value">
-										<select name="currency" class="form">
+										<select name="currency1" class="form">
 											<option data-class="text" value="1" selected>BTC</option>
 											<option data-class="text" value="2">ETH</option>
 											<option data-class="text" value="3">USDT</option>
@@ -572,12 +572,12 @@
 								<input type="hidden" name="admin_email" value="info@invemo.ch">
 								<input type="hidden" name="form_subject" value="Сообщение Invemo">
 
-								<input type="hidden" name="email2" value="">
-								<input type="hidden" name="name2" value="">
-								<input type="hidden" name="client2" value="">
-								<input type="hidden" name="business2" value="">
-								<input type="hidden" name="volume2" value="">
-								<input type="hidden" name="currency2" value="">
+								<input type="hidden" name="email" value="">
+								<input type="hidden" name="name" value="">
+								<input type="hidden" name="client" value="">
+								<input type="hidden" name="business" value="">
+								<input type="hidden" name="volume" value="">
+								<input type="hidden" name="currency" value="">
 
 							</form>
 							<div class="feedback__subtext">By clicking on the «Send» button, you agree
@@ -639,13 +639,13 @@
 	</div>
 </div> -->
 	<!-- gsap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20230525171356"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20230526181648"></script>
 	<!-- ScrollTrigger -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20230525171356"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20230526181648"></script>
 	<!-- jQ -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230525171356"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230526181648"></script>
 
-	<script src="js/app.min.js?_v=20230525171356"></script>
+	<script src="js/app.min.js?_v=20230526181648"></script>
 </body>
 
 </html>
